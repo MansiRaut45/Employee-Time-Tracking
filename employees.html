@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employees</title>
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<div class="layout">
+
+<div class="sidebar" id="sidebar">
+    <div class="logo">
+         <img src="logo.png" alt="Logo">
+         </div>
+    <a href="home.html" class="nav">Dashboard</a>
+    <a href="employees.html" class="nav">Employees</a>
+    <a href="tracker.html" class="nav">Tracker</a>
+    <a href="reports.html" class="nav">Reports</a>
+    <a onclick="logout()">Logout</a>
+</div>
+
+<div class="main">
+    <div class="topbar">
+        <span class="toggle" onclick="toggleSidebar()">☰</span>
+        <h3>Employees</h3>
+    </div>
+
+    <div class="content">
+
+        <input id="search" placeholder="Search employee..." onkeyup="searchEmployee()">
+
+          <input id="empName" placeholder="Employee Name">
+          <button onclick="addEmployee()">Add</button>
+
+          <table class="emp-table">
+          <thead>
+        <tr>
+            <th>#</th>
+            <th>Employee Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="empList"></tbody>
+</table>
+
+    </div>
+</div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+<script src="js/employees.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<div class="layout">
+
+<div class="sidebar" id="sidebar">
+    <div class="logo">
+    <img src="logo.png" alt="Logo">
+    </div>
+
+    <a href="home.html">
+    <i class="fas fa-home"></i>
+    <span>Dashboard</span>
+</a>
+
+<a href="employees.html">
+    <i class="fas fa-users"></i>
+    <span>Employees</span>
+</a>
+
+    <a href="tracker.html">
+    <i class="fas fa-clock"></i>
+    <span>Tracker</span>
+</a>
+
+    <a href="reports.html">
+    <i class="fas fa-chart-bar"></i>
+    <span>Reports</span>
+</a>
+
+    <a onclick="logout()">
+    <i class="fas fa-sign-out-alt"></i>
+    <span>Logout</span>
+</a>
+</div>
+
+<div class="main">
+    <div class="topbar">
+        <span class="toggle" onclick="toggleSidebar()">☰</span>
+        <h3 id="pageTitle">Dashboard</h3>
+    </div>
+
+    <div class="content">
+
+        <h2>Welcome Admin 👋</h2>
+        <p style="margin-bottom:20px;">Here is today’s summary</p>
+
+        <!-- KPI CARDS -->
+        <div class="card">
+            <h3 id="empCount">0</h3>
+            <p>Total Employees</p>
+        </div>
+
+        <div class="card">
+            <h3 id="todayCount">0</h3>
+            <p>Checked In Today</p>
+        </div>
+
+        <div class="card">
+            <h3 id="monthHours">0</h3>
+            <p>Total Hours (This Month)</p>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div style="margin-top:30px;">
+            <h3>Quick Actions</h3>
+            <button onclick="location.href='employees.html'">➕ Add Employee</button>
+            <button onclick="location.href='tracker.html'">⏱ Track Time</button>
+            <button onclick="location.href='reports.html'">📊 View Reports</button>
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* ===== RESET (SAFE) ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f4f6fb;
+}
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 140px;
+    max-width: 100%;
+}
+
+.sidebar.collapsed .logo img {
+    width: 40px;
+}
+
+
+/* ===== LAYOUT ===== */
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    width: 240px;
+    background: #1f3c88;
+    color: white;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.sidebar h2 {
+    margin-bottom: 25px;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+    padding: 12px 0;
+}
+
+.sidebar a:hover {
+    opacity: 0.85;
+}
+
+.sidebar.collapsed {
+    width: 70px;
+}
+
+.sidebar.collapsed span {
+    display: none;
+}
+
+/* ===== MAIN ===== */
+.main {
+    flex: 1;
+}
+
+/* ===== TOPBAR ===== */
+.topbar {
+    background: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.toggle {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* ===== CONTENT ===== */
+.content {
+    padding: 25px;
+}
+
+/* ===== DASHBOARD CARDS (SAFE) ===== */
+.content .card {
+    background: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+/* ===== BUTTONS ===== */
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 9px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+   
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* ===== TABLES (LOCKED – WON'T BREAK) ===== */
+.emp-table,
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.emp-table th,
+.emp-table td,
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.emp-table th,
+table th {
+    background: #f1f3f6;
+}

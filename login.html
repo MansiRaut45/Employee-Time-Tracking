@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Login</title>
+<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="left">
+        <div class="logo">
+         <img src="logo.png" alt="Logo">
+         </div>
+        <h1>Welcome Back👋</h1>
+        <p>Secure Admin Dashboard Login</p>
+    </div>
+
+    <div class="right">
+        <div class="card">
+            <h2>Admin Login</h2>
+
+            <div class="input-box">
+                <label>Admin ID</label>
+                <input type="text" id="username">
+            </div>
+
+            <div class="input-box password-box">
+                <label>Password</label>
+                <input type="password" id="password">
+                <span class="eye" onclick="togglePassword()">👁</span>
+            </div>
+
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/login.js"></script>
+</body>
+</html>
