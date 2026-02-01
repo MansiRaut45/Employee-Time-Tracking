@@ -6,13 +6,11 @@ let records = JSON.parse(localStorage.getItem("records")) || [];
 let table = document.getElementById("reportTable");
 let monthInput = document.getElementById("monthPicker");
 
-/* DEFAULT: current month */
 let now = new Date();
 monthInput.value = now.toISOString().slice(0, 7);
 
 loadTable();
 
-/* ================= LOAD TABLE ================= */
 function loadTable() {
     table.innerHTML = "";
 
@@ -43,7 +41,6 @@ function loadTable() {
     });
 }
 
-/* ================= EXPORT CSV ================= */
 function exportCSV() {
     let selectedMonth = monthInput.value;
 
@@ -72,3 +69,4 @@ function exportCSV() {
 
     URL.revokeObjectURL(url);
 }
+
