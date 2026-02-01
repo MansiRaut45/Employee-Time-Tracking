@@ -8,7 +8,6 @@ let todaySpan = document.getElementById("today");
 let today = new Date().toISOString().split("T")[0];
 todaySpan.innerText = "Date: " + today;
 
-/* LOAD DROPDOWN */
 select.innerHTML = `<option value="">Select Employee</option>`;
 employees.forEach(e => {
     select.innerHTML += `<option value="${e.name}">${e.name}</option>`;
@@ -16,7 +15,6 @@ employees.forEach(e => {
 
 display();
 
-/* CHECK IN */
 function checkIn() {
     let emp = select.value;
     if (!emp) return alert("Select employee");
@@ -40,7 +38,7 @@ function checkIn() {
     save();
 }
 
-/* CHECK OUT */
+
 function checkOut() {
     let emp = select.value;
     if (!emp) return alert("Select employee");
@@ -62,13 +60,11 @@ function checkOut() {
     save();
 }
 
-/* SAVE */
 function save() {
     localStorage.setItem("records", JSON.stringify(records));
     display();
 }
 
-/* DISPLAY */
 function display() {
     table.innerHTML = "";
 
@@ -85,3 +81,4 @@ function display() {
             </tr>`;
         });
 }
+
