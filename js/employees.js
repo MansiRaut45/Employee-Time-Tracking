@@ -3,7 +3,6 @@ let list = document.getElementById("empList");
 
 display(employees);
 
-/* ADD */
 function addEmployee() {
     let name = empName.value.trim();
     if (!name) return alert("Enter name");
@@ -17,7 +16,6 @@ function addEmployee() {
     save();
 }
 
-/* DELETE */
 function deleteEmp(id) {
     if (confirm("Delete employee?")) {
         employees = employees.filter(e => e.id !== id);
@@ -25,7 +23,6 @@ function deleteEmp(id) {
     }
 }
 
-/* EDIT */
 function editEmp(id) {
     let emp = employees.find(e => e.id === id);
     let newName = prompt("Edit Name:", emp.name);
@@ -36,7 +33,6 @@ function editEmp(id) {
     }
 }
 
-/* SEARCH */
 function searchEmployee() {
     let keyword = search.value.toLowerCase();
     let filtered = employees.filter(e =>
@@ -45,13 +41,11 @@ function searchEmployee() {
     display(filtered);
 }
 
-/* SAVE */
 function save() {
     localStorage.setItem("employees", JSON.stringify(employees));
     display(employees);
 }
 
-/* DISPLAY */
 function display(data) {
     list.innerHTML = "";
     data.forEach((e, i) => {
@@ -66,3 +60,4 @@ function display(data) {
         </tr>`;
     });
 }
+
