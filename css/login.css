@@ -26,7 +26,6 @@ body {
     height: 100vh;
 }
 
-/* LEFT BRAND PANEL */
 .left {
     width: 50%;
     padding: 90px;
@@ -52,7 +51,6 @@ body {
     opacity: 0.85;
 }
 
-/* RIGHT LOGIN PANEL */
 .right {
     width: 45%;
     display: flex;
@@ -60,7 +58,6 @@ body {
     justify-content: center;
 }
 
-/* LOGIN CARD */
 .card {
     width: 420px;
     padding: 55px;
@@ -81,7 +78,6 @@ body {
     color: #1f3c88;
 }
 
-/* INPUT */
 .input-box {
     margin-bottom: 26px;
 }
@@ -109,7 +105,6 @@ body {
     box-shadow: 0 0 0 2px rgba(31,60,136,0.1);
 }
 
-/* PASSWORD */
 .password-box {
     position: relative;
 }
@@ -127,7 +122,6 @@ body {
     opacity: 1;
 }
 
-/* FORGOT */
 .forgot {
     display: block;
     text-align: right;
@@ -137,7 +131,6 @@ body {
     text-decoration: none;
 }
 
-/* BUTTON */
 button {
     width: 100%;
     padding: 14px;
@@ -155,5 +148,6 @@ button:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 25px rgba(31,60,136,0.35);
 }
+
 
 
